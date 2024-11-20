@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carreras - Universidad de San Andrés</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="carreras.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="../index.html" style="text-decoration: none;"><h1>Universidad de San Andrés</h1></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html" style="text-decoration: none;">Home</a></li>
+                <li><a href="#" class="active">Carreras</a></li>
+                <li><a href="#">Inscripciones</a></li>
+                <li><a href="#" class="login-btn">Login</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="careers-hero">
+            <div class="hero-content">
+                <h2>Descubre tu Carrera</h2>
+                <p>Encuentra el programa que transformará tu futuro</p>
+            </div>
+        </section>
+
+        <section class="careers-search">
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Busca tu carrera...">
+                <button class="search-button">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </section>
+
+        <section class="careers-grid">
+            <div class="career-card"></div>
+        </section>
+
+        <section class="career-filters">
+            <div class="filter-container">
+                <div class="filter-dropdown">
+                    <select class="area-filter">
+                        <option value="">Área de Conocimiento</option>
+                        <option value="tecnologia">Tecnología</option>
+                        <option value="salud">Salud</option>
+                        <option value="negocios">Negocios</option>
+                        <option value="humanidades">Humanidades</option>
+                    </select>
+                </div>
+                <div class="filter-dropdown">
+                    <select class="duration-filter">
+                        <option value="">Duración</option>
+                        <option value="3">3 años</option>
+                        <option value="4">4 años</option>
+                        <option value="5">5 años</option>
+                        <option value="6">6 años</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Av. Universidad 1234</p>
+                <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+                <p><i class="fas fa-envelope"></i> info@sanandres.edu</p>
+            </div>
+            <div class="footer-section">
+                <h3>Redes Sociales</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="#">Biblioteca</a></li>
+                    <li><a href="#">Campus Virtual</a></li>
+                    <li><a href="#">Calendario Académico</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Universidad de San Andrés. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="carreras.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Administración - Universidad de San Andrés</title>
+    <link rel="stylesheet" href="admin_styles.css">  <!-- Enlace a tu CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Panel de Administración</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="./logout.html">Cerrar Sesión</a></li> </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="admin-dashboard">
+            <h2>Panel de Control</h2>
+            <div class="dashboard-grid">
+
+                <a href="./admin/inscribir_alumno.html" class="dashboard-card">
+                    <i class="fas fa-user-plus"></i>
+                    <h3>Inscribir Alumno</h3>
+                </a>
+
+                <a href="./admin/ver_alumno.html" class="dashboard-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Ver Información de Alumnos</h3>
+                </a>
+
+                <a href="./admin/registrar_carrera.html" class="dashboard-card">
+                    <i class="fas fa-book"></i>
+                    <h3>Registrar Carrera</h3>
+                </a>
+
+                <a href="./admin/ver_carrera.html" class="dashboard-card">
+                    <i class="fas fa-book-open"></i>
+                    <h3>Ver Información de Carreras</h3>
+                </a>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-bottom">
+                <p>© 2024 Universidad de San Andrés. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="admin_app.js"></script> <!-- Enlace a tu JS -->
+</body>
+</html>
