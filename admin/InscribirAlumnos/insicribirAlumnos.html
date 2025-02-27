@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscribir Alumno - Universidad de San Andrés</title>
+    <link rel="stylesheet" href="../admin_styles.css">  
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div id="content-wrapper"> <header> </header> <main> </main> </div>  // navbar y main dentro del contenedor
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Panel de Administración</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="admin.html">Dashboard</a></li> </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inscripcion-alumnos">
+            <h2>Inscribir Alumnos</h2>
+            <form id="formulario-inscripcion">
+                <fieldset>
+                  <legend>Datos Personales</legend>
+                  <div class="row">
+                    <div class="col">
+                      <label for="nombre">Nombre:</label>
+                      <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="col">
+                      <label for="apellido">Apellido:</label>
+                      <input type="text" id="apellido" name="apellido" required>
+                    </div>
+                  </div>
+                  <div class="row">
+                     <div class="col">
+                      <label for="dni">DNI:</label>
+                      <input type="text" id="dni" name="dni" required>
+                    </div>
+                    <div class="col">
+                      <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+                      <input type="date" id="fechaNacimiento" name="fechaNacimiento" required>
+                    </div>
+              
+                  </div>
+              
+                  </fieldset>
+              
+              
+                  <fieldset>
+                    <legend>Datos de Contacto</legend>
+              
+                      <div class="row">
+                           <div class="col">
+                      <label for="telefono">Teléfono:</label>
+                      <input type="tel" id="telefono" name="telefono" required>
+                    </div>
+                    <div class="col">
+                      <label for="correo">Correo Electrónico:</label>
+                      <input type="email" id="correo" name="correo" required>
+                    </div>
+              
+                      </div>
+              
+                  </fieldset>
+
+                  <fieldset>
+                    <legend>Carrera</legend>
+              
+                      <div class="row">
+                           <div class="col">
+                            <select id="carrera" name="carrera" required>
+                                <option value="">Seleccionar Carrera</option>
+                                <!-- Aquí irán las opciones de carreras (se completarán con JS o backend) -->
+                            </select>                    
+                        </div>
+                      </div>
+              
+                  </fieldset>
+              
+                <fieldset>
+                  <legend>Historia Académica</legend>
+                  <label for="tituloSecundario">Título Secundario (PDF):</label>
+                  <input type="file" id="tituloSecundario" name="tituloSecundario" accept=".pdf" required>
+              
+              
+                </fieldset>
+              
+                  </form>
+
+                <button type="button" id="btnVistaPrevia">Vista Previa</button>
+            </form>
+
+            <div id="modalVistaPrevia" class="modal">
+                <div class="modal-content">
+                    <span class="close-modal">&times;</span>
+                    <h3>Vista Previa de la Inscripción</h3>
+
+                    <p><span class="preview-label">Nombre:</span> <span id="preview-nombre"></span></p>
+                    <p><span class="preview-label">Apellido:</span> <span id="preview-apellido"></span></p>
+                    <p><span class="preview-label">DNI:</span> <span id="preview-dni"></span></p>
+                    <p><span class="preview-label">Fecha de Nacimiento:</span> <span id="preview-fechaNacimiento"></span></p>
+                    <p><span class="preview-label">Teléfono:</span> <span id="preview-telefono"></span></p>
+                    <p><span class="preview-label">Correo Electrónico:</span> <span id="preview-correo"></span></p>
+                    <p><span class="preview-label">Domicilio:</span> <span id="preview-domicilio"></span></p>
+                    <p><span class="preview-label">Carrera:</span> <span id="preview-carrera"></span></p>
+
+
+
+                    <button id="btnCompletar">Completar</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-bottom">
+                <p>© 2024 Universidad de San Andrés. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./inscribirAlumnos.js"></script>
+     <link rel="stylesheet" href="./inscribirAlumnos.css">
+
+</body>
+</html>

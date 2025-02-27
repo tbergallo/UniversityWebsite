@@ -7,35 +7,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const areaFilter = document.querySelector('.area-filter');
     const durationFilter = document.querySelector('.duration-filter');
 
-    // Control del menú móvil
-    hamburger.addEventListener('click', function() {
-        navLinks.classList.toggle('active');
-        hamburger.classList.toggle('active');
-        
-        if (navLinks.classList.contains('active')) {
-            navLinks.style.display = 'flex';
-            navLinks.style.animation = 'slideIn 0.3s ease forwards';
-        } else {
-            navLinks.style.animation = 'slideOut 0.3s ease forwards';
-            setTimeout(() => {
-                navLinks.style.display = 'none';
-            }, 300);
-        }
-    });
-
-    // Navbar transparente y sólido al scroll
-    function updateNavbar() {
-        if (window.scrollY > 50) {
-            navbar.style.background = 'rgba(255, 255, 255, 0.95)';
-            navbar.style.boxShadow = '0 2px 10px rgba(0,0,0,0.1)';
-        } else {
-            navbar.style.background = 'transparent';
-            navbar.style.boxShadow = 'none';
-        }
-    }
-
-    window.addEventListener('scroll', updateNavbar);
-
     // Base de datos de carreras (ejemplo para demostración)
     const carreras = [
         {

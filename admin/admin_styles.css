@@ -9,6 +9,10 @@
     --transition: all 0.3s ease;
 }
 
+h2{
+    margin: 15px 15px 15px 15px;
+}
+
 /* Reset y estilos base (igual que en styles.css) */
 * {
     margin: 0;
@@ -67,6 +71,11 @@ body {
 
 .dashboard-grid {
     display: grid;
+    align-items: center; /* Vertically center within the grid area */
+    justify-content: center; /* Horizontally center the grid */
+    align-content: center;
+    align-items: center;
+    grid-column: 3;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
 }

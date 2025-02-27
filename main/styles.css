@@ -24,7 +24,8 @@ body {
 
 /* Navegación */
 .navbar {
-    background: var(--white);
+    background: transparent;
+    box-shadow: none;
     padding: 1rem 5%;
     position: fixed;
     width: 100%;
@@ -39,6 +40,11 @@ body {
 .logo h1 {
     font-size: 1.5rem;
     color: lightgray;
+}
+
+#logoUniversidad {
+    width: 75%; /* La imagen ocupará el 50% del ancho del contenedor */
+    height: auto;
 }
 
 .nav-links {

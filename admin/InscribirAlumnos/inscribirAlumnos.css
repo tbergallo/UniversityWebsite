@@ -1,0 +1,152 @@
+/* inscribirAlumnos.css */
+
+#inscripcion-alumnos {
+    margin-top: 100px; /* Ajusta este valor según la altura de tu navbar */
+    padding: 20px;
+    max-width: 600px;
+    margin: 50px auto; /* Centra horizontalmente */
+}
+
+#inscripcion-alumnos label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#inscripcion-alumnos input,
+#inscripcion-alumnos select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#inscripcion-alumnos button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Estilos del Modal */
+.modal {
+    display: none;
+    position: fixed;
+     /* Asegura que el modal esté por encima de otros elementos */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Evita el scroll en el body */
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 100; /* Un valor alto para asegurar que el modal esté por encima */
+}
+
+.modal-content {
+    animation-name: slideDown;
+    animation-duration: 0.5s;
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    width: 90%;
+    max-width: 800px;
+    position: relative; /* Para que overflow-y funcione dentro del modal */
+    overflow-y: auto; /* Permite el scroll dentro del modal */
+}
+
+.modal-content p {
+    margin-bottom: 20px;
+}
+
+@keyframes slideDown {
+    from {
+        top: -300px;
+        opacity: 0;
+    }
+    to {
+        top: 15%;
+        opacity: 1;
+    }
+}
+
+.close-modal {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.preview-label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.modal.closing {
+    animation-name: slideUp;
+    animation-duration: 0.5s;
+}
+
+@keyframes slideUp {
+    from {
+        top: 15%;
+        opacity: 1;
+    }
+    to {
+        top: -300px;
+        opacity: 0;
+    }
+}
+
+body.modal-open {
+    overflow: hidden; /* Desactiva el scroll del body cuando el modal está abierto */
+    height: 100%; /* Necesario para que overflow: hidden funcione correctamente en algunos navegadores */
+}
+
+/* ... otros estilos ... */
+
+#formulario-inscripcion fieldset {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#formulario-inscripcion legend {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las columnas se ajusten a la pantalla */
+    margin-bottom: 10px;
+}
+
+.col {
+    flex: 1; /* Distribuye el espacio disponible entre las columnas */
+    padding: 5px;
+    box-sizing: border-box; /* Incluye el padding en el ancho de la columna */
+}
+
+
+
+/* Ajusta el ancho de las columnas para pantallas pequeñas */
+@media (max-width: 768px) {
+    .col {
+        flex: 0 0 100%; /* Cada columna ocupa el 100% del ancho en pantallas pequeñas */
+        max-width: 100%;
+    }
+}

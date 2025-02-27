@@ -25,12 +25,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Navbar transparente al inicio y sólido al scroll
     function updateNavbar() {
-        if (window.scrollY > 50) {
+        const logo = document.getElementById('logoUniversidad'); // Obtener el elemento de la imagen
+        if (window.scrollY > 0) {
             navbar.style.background = 'rgba(255, 255, 255, 0.95)';
             navbar.style.boxShadow = '0 2px 10px rgba(0,0,0,0.1)';
+            logo.src = '../assets/udesa_color.png'; // Cambiar la imagen al logo de color cuando scrollY <= 50
+
         } else {
             navbar.style.background = 'transparent';
             navbar.style.boxShadow = 'none';
+            logo.src = '../assets/udesa_blanco.png'; // Cambiar la imagen al logo de color cuando scrollY <= 50
         }
     }
 

@@ -23,78 +23,51 @@ body {
 }
 
 /* Navbar (mismo del home) */
-.navbar {
-    background: var(--white);
-    padding: 1rem 5%;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-}
-
-.logo h1 {
-    font-size: 1.5rem;
-    color: var(--primary-color);
-}
-
-.nav-links {
-    display: flex;
-    list-style: none;
-    gap: 2rem;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: var(--text-color);
-    font-weight: 500;
-    transition: var(--transition);
-}
-
-.nav-links a:hover, .nav-links a.active {
-    color: var(--secondary-color);
-}
-
-.login-btn {
-    background: var(--secondary-color);
-    color: var(--white) !important;
-    padding: 0.5rem 1.5rem;
-    border-radius: 25px;
-}
-
-.login-btn:hover {
-    background: var(--primary-color);
-    transform: translateY(-2px);
-}
 
 /* Careers Hero */
 .careers-hero {
-    height: 50vh;
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/api/placeholder/1920/1080');
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/assets/unicampus.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
     align-items: center;
-    justify-content: center;
     text-align: center;
     color: var(--white);
+    padding: 0 5%;
     margin-top: -80px;
 }
 
-.careers-hero .hero-content {
-    text-align: center;
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-.careers-hero h2 {
-    font-size: 3rem;
+.hero-content h2 {
+    font-size: 3.5rem;
     margin-bottom: 1rem;
+    color: whitesmoke;
 }
 
-.careers-hero p {
+.hero-content p {
     font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: var(--accent-color);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    transition: var(--transition);
+}
+
+.cta-button:hover {
+    background: var(--secondary-color);
+    transform: translateY(-3px);
 }
 
 /* Barra de Búsqueda */
